@@ -8,6 +8,7 @@ import WorldMap from "./components/Home/WorldMap";
 import Space from "./components/Home/Space";
 import Masters from "./components/Home/Masters";
 import Reviews from "./components/Home/Reviews";
+import Faqs from "./components/Home/Faqs";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
       <Space />
       <Masters />
       <Reviews />
+      <Faqs />
     </div>
   );
 }
