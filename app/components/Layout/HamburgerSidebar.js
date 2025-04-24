@@ -1,113 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useAuth } from "@/app/context/AuthContext";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { toast } from "sonner";
-import LoginModal from "@/app/authModals/LoginModal";
-import RegisterModal from "@/app/authModals/RegisterModal";
-import ConfirmModal from "@/app/authModals/ConfirmModal";
+import logo from "../../../public/icons/logo.png";
+import phoneIcon from "../../../public/icons/phone.png";
+import mailIcon from "../../../public/icons/mail.png";
+import Link from "next/link";
 
-// Replace Lucide icons with React Icons
-// import {
-//   FaBell,
-//   FaSignInAlt,
-//   FaUser,
-//   FaTimes,
-//   FaRedo,
-//   FaPowerOff,
-// } from "react-icons/fa";
-// import { PiUserList } from "react-icons/pi";
-// import { IoCloseCircleOutline } from "react-icons/io5";
-
-const NAVIGATIONS = [
-  { label: "Home", link: "/" },
-  { label: "About", link: "/about" },
-  { label: "How it work", link: "/#how-it-work" },
-  { label: "Become a host", link: "#become-host" },
-  { label: "Help", link: "/help" },
-];
-
-export default function HamburgerSidebar({ onClose }) {
-  const { user, logout } = useAuth();
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
-  const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
-  const [isLogoutModalOpen, setIsLogoutModalOpen] = useState(false);
-
-  const openLoginModal = () => setIsLoginModalOpen(true);
-  const closeLoginModal = () => setIsLoginModalOpen(false);
-
-  const openRegisterModal = () => setIsRegisterModalOpen(true);
-  const closeRegisterModal = () => setIsRegisterModalOpen(false);
-
-  const openLogoutModal = () => setIsLogoutModalOpen(true);
-  const closeLogoutModal = () => setIsLogoutModalOpen(false);
-
-  const handleLogoutConfirm = () => {
-    logout();
-    toast.success("Logged out successfully");
-    closeLogoutModal();
-  };
-
-  const handleConfirm = () => {
-    console.log("Action confirmed!");
-    setIsConfirmModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    console.log("Action canceled!");
-    setIsConfirmModalOpen(false);
-  };
-
-  const openConfirmModal = () => {
-    setIsConfirmModalOpen(true);
-  };
-  console.log(openConfirmModal);
-
-  const handleNavigation = (link) => {
-    if (link.startsWith("#")) {
-      const element = document.querySelector(link);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-    onClose();
-  };
-
-  const getTextColor = (link) => {
-    if (pathname === "/") {
-      return link === "/" ? "text-success" : "text-dark";
-    } else {
-      if (link.startsWith("#")) {
-        return pathname === "/" ? "text-dark" : "text-success";
-      }
-
-      return pathname === link ? "text-success" : "text-dark";
-    }
-  };
-
-  const getAuthButtonColor = () => {
-    if (!pathname) return "text-dark";
-    return pathname === "/" ? "text-success" : "text-dark";
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
+export default function HamburgerSidebar() {
   return (
     <div className="d-flex flex-column gap-4">
       <div className="d-flex justify-content-end d-lg-none">
@@ -208,19 +108,6 @@ export default function HamburgerSidebar({ onClose }) {
           </div>
         </div>
       )}
-
-      <LoginModal isOpen={isLoginModalOpen} closeModal={closeLoginModal} />
-      <RegisterModal
-        isOpen={isRegisterModalOpen}
-        closeModal={closeRegisterModal}
-      />
-      <ConfirmModal
-        isOpen={isConfirmModalOpen}
-        message="Are you sure you want to proceed with this action?"
-        onConfirm={handleConfirm}
-        onCancel={handleCancel}
-        closeModal={() => setIsConfirmModalOpen(false)}
-      />
 
       {isLogoutModalOpen && (
         <div
