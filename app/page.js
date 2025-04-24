@@ -9,6 +9,7 @@ import Space from "./components/Home/Space";
 import Masters from "./components/Home/Masters";
 import Reviews from "./components/Home/Reviews";
 import Faqs from "./components/Home/Faqs";
+import BlogPosts from "./components/Home/BlogPosts";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       <Masters />
       <Reviews />
       <Faqs />
+      <BlogPosts />
     </div>
   );
 }
