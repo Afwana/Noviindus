@@ -15,7 +15,9 @@ export default function Page() {
   return (
     <div className="d-flex flex-column gap-5">
       <MainSection />
-      <EducareStory />
+      <div id="about">
+        <EducareStory />
+      </div>
       <WayOfTeaching />
       <Programms />
       <Subjects />
@@ -24,7 +26,9 @@ export default function Page() {
       <Masters />
       <Reviews />
       <Faqs />
-      <BlogPosts />
+      <div id="blog">
+        <BlogPosts />
+      </div>
     </div>
   );
 }

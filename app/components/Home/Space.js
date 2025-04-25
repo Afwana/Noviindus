@@ -1,10 +1,10 @@
 export default function Space() {
   return (
-    <div className="px-5">
+    <div className="px-2 px-lg-5">
       <div className="d-flex flex-column gap-5">
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
           <p
-            className=" d-flex justify-content-center font-Bricolage"
+            className=" d-flex flex-column flex-md-row justify-content-center font-Bricolage"
             style={{
               color: "#655945",
               fontSize: "42px",

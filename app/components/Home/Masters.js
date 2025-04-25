@@ -8,10 +8,10 @@ import image4 from "../../../public/images/master4.jpg";
 export default function Masters() {
   return (
     <div className="d-flex flex-column px-5">
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex flex-column flex-md-row  justify-content-between align-items-center">
         <div></div>
         <p
-          className=" d-flex justify-content-center font-Bricolage"
+          className="d-flex flex-column flex-md-row justify-content-center font-Bricolage"
           style={{
             color: "#655945",
             fontSize: "42px",
@@ -32,9 +32,10 @@ export default function Masters() {
           </button>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center gap-3 mt-5">
-        <div className="position-relative">
+      <div className="d-flex flex-column flex-lg-row  justify-content-between align-items-center gap-3 mt-5">
+        <div className="position-relative animate-card">
           <div
+            className="cardBg"
             style={{
               backgroundColor: "#8A1538",
               borderRadius: "26px",
@@ -44,7 +45,7 @@ export default function Masters() {
             }}></div>
           <div className="position-absolute" style={{ top: "0", left: "0" }}>
             <div
-              className="card p-2"
+              className="card p-2 card-content"
               style={{
                 backgroundColor: "#FFF3E1",
                 borderRadius: "26px",

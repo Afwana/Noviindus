@@ -4,8 +4,8 @@ import image1 from "../../../public/images/teaching.png";
 export default function WayOfTeaching() {
   return (
     <div className="p-5" style={{ backgroundColor: "#F9F7F4" }}>
-      <div className="d-flex align-items-center justify-content-between">
-        <div className="d-flex flex-column gap-4 me-5">
+      <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div className="d-flex flex-column gap-4 me-5 ps-5 ps-md-0">
           <p
             className="font-Bricolage"
             style={{
@@ -46,6 +46,16 @@ export default function WayOfTeaching() {
               </li>
             </ul>
           </div>
+          <div>
+            <Image
+              src={image1}
+              alt="image"
+              width={300}
+              height={262}
+              style={{ borderRadius: "26px" }}
+              className="d-flex d-lg-none"
+            />
+          </div>
         </div>
         <div>
           <Image
@@ -54,6 +64,7 @@ export default function WayOfTeaching() {
             width={800}
             height={462}
             style={{ borderRadius: "26px" }}
+            className="d-none d-lg-flex"
           />
         </div>
       </div>

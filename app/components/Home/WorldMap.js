@@ -5,11 +5,11 @@ import image from "../../../public/images/img.svg";
 export default function WorldMap() {
   return (
     <>
-      <div className="px-5 mt-5">
-        <div className="d-flex flex-column gap-5">
-          <div className="d-flex justify-content-center align-items-center">
+      <div className="px-2 px-lg-5 mt-5">
+        <div className="d-flex flex-column gap-1 gap-lg-5">
+          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
             <p
-              className=" d-flex justify-content-center font-Bricolage"
+              className=" d-flex flex-column flex-lg-row justify-content-center font-Bricolage"
               style={{
                 color: "#655945",
                 fontSize: "42px",
@@ -27,8 +27,13 @@ export default function WorldMap() {
             </p>
           </div>
           <div
-            className="position-relative"
+            className="position-relative d-none d-lg-flex"
             style={{ width: "100%", height: "676px" }}>
+            <Image src={Map} alt="map with clients" fill objectFit="contain" />
+          </div>
+          <div
+            className="position-relative d-flex d-lg-none"
+            style={{ width: "100%", height: "350px" }}>
             <Image src={Map} alt="map with clients" fill objectFit="contain" />
           </div>
         </div>

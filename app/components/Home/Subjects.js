@@ -6,11 +6,11 @@ import maths from "../../../public/images/Maths.svg";
 
 export default function Subjects() {
   return (
-    <div className="d-flex flex-column px-5">
-      <div className="d-flex justify-content-between align-items-center">
+    <div className="d-flex flex-column px-2 px-lg-5">
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div></div>
         <p
-          className=" d-flex justify-content-center font-Bricolage"
+          className=" d-flex flex-column flex-md-row justify-content-center font-Bricolage"
           style={{
             color: "#655945",
             fontSize: "42px",
@@ -53,7 +53,7 @@ export default function Subjects() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className="d-flex justify-content-between align-items-center gap-2 mt-5">
+            <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 mt-5">
               <div
                 className="card p-2"
                 style={{
@@ -182,7 +182,7 @@ export default function Subjects() {
             </div>
           </div>
           <div className="carousel-item">
-            <div className="d-flex justify-content-between align-items-center gap-2 mt-5">
+            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 mt-5">
               <div
                 className="card p-2"
                 style={{
@@ -311,7 +311,7 @@ export default function Subjects() {
             </div>
           </div>
           <div className="carousel-item">
-            <div className="d-flex justify-content-between align-items-center gap-2 mt-5">
+            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 mt-5">
               <div
                 className="card p-2"
                 style={{

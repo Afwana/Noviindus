@@ -12,9 +12,21 @@ export default function Footer() {
   return (
     <div
       className="d-flex flex-column position-relative mt-5"
-      style={{ zIndex: 50, color: "white" }}>
-      <div className="row g-0 px-5 pt-5" style={{ backgroundColor: "#8A1538" }}>
-        <div className="col-3">
+      style={{ zIndex: 50, color: "white", backgroundColor: "#8A1538" }}>
+      <div className="d-block d-lg-none px-5 pt-5">
+        <div className="d-flex align-items-center gap-2">
+          <div>
+            <Image src={logo} width={36} height={36} alt="Logo" />
+          </div>
+          <span
+            className="font-Bricolage"
+            style={{ fontSize: "28px", fontWeight: "bold" }}>
+            Educare
+          </span>
+        </div>
+      </div>
+      <div className="row g-0 px-5 pt-5">
+        <div className="col-3 d-none d-lg-block">
           <div className="d-flex align-items-center gap-2">
             <div>
               <Image src={logo} width={36} height={36} alt="Logo" />
@@ -27,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="col-9 font-sans">
-          <div className="d-flex align-items-start justify-content-between">
+          <div className="d-flex flex-column flex-md-row gap-4 gap-lg-0 align-items-start justify-content-start justify-content-lg-between">
             <div className="d-flex flex-column gap-3">
               <span
                 className=""
@@ -66,7 +78,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <div className="d-flex flex-column gap-3 ms-3">
+            <div className="d-flex flex-column gap-3 ms-lg-3">
               <span
                 className=""
                 style={{ fontSize: "24px", fontWeight: "600" }}>
@@ -105,9 +117,12 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="d-flex gap-3 align-items-start justify-content-end">
-              <div className="relative w-[146px] h-[276px]">
-                <Image src={Map} alt="footer map" />
+            <div className="d-flex d-md-none d-lg-flex gap-3 align-items-start justify-content-end">
+              <div className="d-none d-lg-block">
+                <Image src={Map} alt="footer map" width={146} height={276} />
+              </div>
+              <div className="d-block d-lg-none">
+                <Image src={Map} alt="footer map" width={120} height={250} />
               </div>
 
               <div className="d-flex flex-column gap-3 ms-3">
@@ -142,11 +157,43 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="d-none d-md-flex d-lg-none gap-3 align-items-start justify-content-start px-5 pt-5">
+        <div className="">
+          <Image src={Map} alt="footer map" width={146} height={276} />
+        </div>
+
+        <div className="d-flex flex-column gap-3 ms-3">
+          <span className="" style={{ fontSize: "24px", fontWeight: "600" }}>
+            Office Address
+          </span>
+          <p
+            className=""
+            style={{
+              fontSize: "20px",
+              fontWeight: "400",
+              color: "white",
+            }}>
+            EducareEducation Center <br /> Building 45, Al Sadd Street,
+            <br />
+            Doha, Qatar
+          </p>
+          <Link
+            className=""
+            style={{
+              fontSize: "20px",
+              fontWeight: "400",
+              color: "white",
+            }}
+            href="https://www.google.co.in/maps">
+            View on Map
+          </Link>
+        </div>
+      </div>
 
       <div style={{ backgroundColor: "#8A1538" }} className="font-sans">
         <hr style={{ borderColor: "#DCC19659" }} />
         <div className="px-5 pt-2">
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
             <p>
               © 2024{" "}
               <Link

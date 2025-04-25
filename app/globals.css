@@ -65,7 +65,7 @@ a {
   height: 100%;
   background-color: #ebc48b;
   border-radius: 12px;
-  transform: rotate(-0.96deg) translate(4px, 4px);
+  transform: rotate(0.96deg);
   z-index: 0;
 }
 
@@ -76,7 +76,7 @@ a {
   padding: 14px 28px;
   font-weight: 500;
   border-radius: 12px;
-  transform: rotate(-2.66deg) translate(4px, 4px);
+  transform: rotate(-2.66deg);
   position: relative;
   z-index: 1;
 }
@@ -92,19 +92,19 @@ a {
 
 @keyframes rotatebg {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0.96deg);
   }
   100% {
-    transform: rotate(0.96deg);
+    transform: rotate(0deg);
   }
 }
 
 .fancy-button:hover .button-content {
-  animation: rotatefg 0.2s;
+  animation: rotatefg 10s;
 }
 
-.demo-button:hover .bg-layer {
-  animation: rotatebg 0.2s;
+.button-content:hover .bg-layer {
+  animation: rotatebg 10s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,7 +119,7 @@ a {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* adjust distance as needed */
+    transform: translateY(-20px);
   }
 }
 
@@ -133,4 +133,106 @@ a {
 
 .shadow-maroon {
   box-shadow: 4px 4px 0px rgba(138, 21, 56);
+}
+
+.link-tag {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .blog-image {
+    width: 100%;
+  }
+}
+
+@keyframes rotatebgCard {
+  0% {
+    transform: rotate(3.75deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-card:hover .card-content {
+  animation: rotatebgCard 10s;
+}
+
+.mision-box-size {
+  width: 583px;
+  height: 195px;
+}
+
+.carousel-font {
+  font-size: 67px;
+}
+
+.label-form {
+  font-size: 15px !important;
+  color: #655945 !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.form-field {
+  height: 40px;
+  border: 1px;
+  border-radius: 8px;
+  border-color: #6559453d;
+}
+
+.form-select {
+  height: 40px;
+  border-radius: 8px;
+  background-color: #fff3e1;
+}
+
+.program-item-box {
+  width: 480px;
+  height: 215px;
+}
+
+.review-card {
+  width: 480px;
+  height: 330px;
+}
+
+@media (max-width: 377px) {
+  .mision-box-size {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 378px) {
+  .mision-box-size {
+    width: 400px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mision-box-size {
+    width: 583px;
+    height: 195px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-font {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 426px) {
+  .program-item-box {
+    width: 280px;
+    height: 215px;
+  }
+}
+
+@media (max-width: 426px) {
+  .review-card {
+    width: 300px;
+    height: 400px;
+  }
 }

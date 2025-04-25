@@ -1,10 +1,10 @@
 export default function Faqs() {
   return (
-    <div className="px-5">
+    <div className="px-2 px-lg-5">
       <div className="d-flex flex-column gap-5">
         <div className="d-flex justify-content-center align-items-center">
           <p
-            className=" d-flex justify-content-center font-Bricolage"
+            className=" d-flex flex-column flex-md-row  justify-content-center font-Bricolage"
             style={{
               color: "#655945",
               fontSize: "42px",
@@ -72,7 +72,7 @@ export default function Faqs() {
             </h2>
             <div
               id="collapseTwo"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample">
               <div
                 className="accordion-body"
@@ -103,7 +103,7 @@ export default function Faqs() {
             </h2>
             <div
               id="collapseThree"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample">
               <div
                 className="accordion-body"
@@ -134,7 +134,7 @@ export default function Faqs() {
             </h2>
             <div
               id="collapseFour"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample">
               <div
                 className="accordion-body"
@@ -165,7 +165,7 @@ export default function Faqs() {
             </h2>
             <div
               id="collapseFive"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample">
               <div
                 className="accordion-body"

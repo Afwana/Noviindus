@@ -18,7 +18,7 @@ export default function EducareStory() {
   return (
     <div className="d-flex flex-column gap-3">
       <div
-        className="d-flex align-items-center justify-content-around py-3"
+        className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-around py-3"
         style={{ backgroundColor: "#FFF3E1" }}>
         <div className="d-flex align-items-center justify-content-center gap-2 font-sans">
           <PiUserFocusDuotone size={40} className="icon-color" />
@@ -45,8 +45,7 @@ export default function EducareStory() {
           </span>
         </div>
       </div>
-
-      <div className="d-flex px-5 align-items-center justify-content-between gap-5">
+      <div className="d-flex px-2 px-lg-5 align-items-center justify-content-between gap-5">
         <div className="d-flex flex-column gap-4 me-5">
           <p
             className="font-Bricolage"
@@ -102,7 +101,7 @@ export default function EducareStory() {
             </button>
           </div>
         </div>
-        <div className="ms-5">
+        <div className="ms-5 d-none d-lg-flex">
           <div
             className="position-relative"
             style={{ width: "100%", height: "500px", right: "130px" }}>
@@ -166,15 +165,13 @@ export default function EducareStory() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between gap-4 px-5 mt-5">
-        <div className="position-relative">
+      <div className="d-flex flex-column flex-lg-row justify-content-between gap-3 px-2 px-md-5 mt-5">
+        <div className="position-relative mision-box-size">
           <div
             className="p-4"
             style={{
               backgroundColor: "#FFF3E1",
               borderRadius: "26px",
-              width: "583px",
-              height: "195px",
             }}>
             <p
               className="font-sans icon-color"
@@ -188,7 +185,7 @@ export default function EducareStory() {
             </p>
           </div>
           <div
-            className="position-absolute"
+            className="position-absolute d-none d-lg-block"
             style={{ top: "-50px", left: "70%" }}>
             <Image
               src={mision}
@@ -199,14 +196,12 @@ export default function EducareStory() {
             />
           </div>
         </div>
-        <div className="position-relative">
+        <div className="position-relative mision-box-size">
           <div
             className="p-4 shadow-maroon"
             style={{
               backgroundColor: "#FFF3E1",
               borderRadius: "26px",
-              width: "583px",
-              height: "195px",
             }}>
             <p
               className="font-sans icon-color"
@@ -220,7 +215,7 @@ export default function EducareStory() {
             </p>
           </div>
           <div
-            className="position-absolute"
+            className="position-absolute d-none d-lg-block"
             style={{ top: "-50px", left: "70%" }}>
             <Image
               src={vision}
@@ -231,7 +226,13 @@ export default function EducareStory() {
             />
           </div>
         </div>
-        <Image src={image3} alt="arrow" width={196} height={134} />
+        <Image
+          src={image3}
+          alt="arrow"
+          width={196}
+          height={134}
+          className="d-none d-lg-block"
+        />
       </div>
     </div>
   );

@@ -6,11 +6,11 @@ import { IoStar } from "react-icons/io5";
 
 export default function Reviews() {
   return (
-    <div className="px-4 mt-5">
+    <div className="px-2 px-lg-5 mt-5">
       <div className="d-flex flex-column gap-5">
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
           <p
-            className=" d-flex justify-content-center font-Bricolage"
+            className=" d-flex flex-column flex-md-row  justify-content-center font-Bricolage"
             style={{
               color: "#655945",
               fontSize: "42px",
@@ -49,14 +49,12 @@ export default function Reviews() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <div className="d-flex justify-content-between align-items-center gap-2 mt-5">
+              <div className="d-flex flex-column flex-lg-row  justify-content-between align-items-center gap-5 gap-lg-2 mt-5">
                 <div className="position-relative">
                   <div
-                    className="card px-2 pt-4"
+                    className="card px-2 pt-4 review-card"
                     style={{
                       borderRadius: "26px",
-                      width: "480px",
-                      height: "330px",
                     }}>
                     <div className="card-body pt-5 f-flex flex-column justify-content-center align-items-end">
                       <p
@@ -95,7 +93,7 @@ export default function Reviews() {
                   </div>
 
                   <div
-                    className="position-absolute"
+                    className="position-absolute d-none d-md-block"
                     style={{ top: "-55%", left: "0", zIndex: 0 }}>
                     <div
                       className="d-flex justify-content-between align-items-center px-4"
@@ -119,14 +117,37 @@ export default function Reviews() {
                       />
                     </div>
                   </div>
+                  <div
+                    className="position-absolute d-block d-md-none mt-5"
+                    style={{ top: "-55%", left: "0", zIndex: 0 }}>
+                    <div
+                      className="d-flex justify-content-between align-items-center px-4"
+                      style={{
+                        borderRadius: "26px",
+                        width: "300px",
+                        height: "370px",
+                        zIndex: 1,
+                      }}>
+                      <Image
+                        src={Customer1}
+                        alt="reviewed customer"
+                        width={94}
+                        height={96}
+                      />
+                      <Image
+                        src={vector}
+                        alt="reviewed customer"
+                        width={40}
+                        height={68}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="position-relative">
                   <div
-                    className="card px-2 pt-4"
+                    className="card px-2 pt-4 review-card"
                     style={{
                       borderRadius: "26px",
-                      width: "480px",
-                      height: "330px",
                     }}>
                     <div className="card-body pt-5 f-flex flex-column justify-content-center align-items-end">
                       <p
@@ -165,7 +186,7 @@ export default function Reviews() {
                   </div>
 
                   <div
-                    className="position-absolute"
+                    className="position-absolute d-none d-md-block"
                     style={{ top: "-55%", left: "0", zIndex: 0 }}>
                     <div
                       className="d-flex justify-content-between align-items-center px-4"
@@ -189,14 +210,37 @@ export default function Reviews() {
                       />
                     </div>
                   </div>
+                  <div
+                    className="position-absolute d-block d-md-none mt-5"
+                    style={{ top: "-55%", left: "0", zIndex: 0 }}>
+                    <div
+                      className="d-flex justify-content-between align-items-center px-4"
+                      style={{
+                        borderRadius: "26px",
+                        width: "300px",
+                        height: "370px",
+                        zIndex: 1,
+                      }}>
+                      <Image
+                        src={Customer1}
+                        alt="reviewed customer"
+                        width={94}
+                        height={96}
+                      />
+                      <Image
+                        src={vector}
+                        alt="reviewed customer"
+                        width={40}
+                        height={68}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="position-relative">
                   <div
-                    className="card px-2 pt-4"
+                    className="card px-2 pt-4 review-card"
                     style={{
                       borderRadius: "26px",
-                      width: "480px",
-                      height: "330px",
                     }}>
                     <div className="card-body pt-5 f-flex flex-column justify-content-center align-items-end">
                       <p
@@ -235,13 +279,38 @@ export default function Reviews() {
                   </div>
 
                   <div
-                    className="position-absolute"
+                    className="position-absolute d-none d-md-block"
                     style={{ top: "-55%", left: "0", zIndex: 0 }}>
                     <div
                       className="d-flex justify-content-between align-items-center px-4"
                       style={{
                         borderRadius: "26px",
                         width: "480px",
+                        height: "370px",
+                        zIndex: 1,
+                      }}>
+                      <Image
+                        src={Customer1}
+                        alt="reviewed customer"
+                        width={94}
+                        height={96}
+                      />
+                      <Image
+                        src={vector}
+                        alt="reviewed customer"
+                        width={40}
+                        height={68}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="position-absolute d-block d-md-none mt-5"
+                    style={{ top: "-55%", left: "0", zIndex: 0 }}>
+                    <div
+                      className="d-flex justify-content-between align-items-center px-4"
+                      style={{
+                        borderRadius: "26px",
+                        width: "300px",
                         height: "370px",
                         zIndex: 1,
                       }}>

@@ -7,10 +7,10 @@ import image4 from "../../../public/images/blog4.png";
 
 export default function BlogPosts() {
   return (
-    <div className="px-4">
-      <div className="d-flex justify-content-between align-items-center">
+    <div className="px-2 px-lg-5">
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <p
-          className=" d-flex justify-content-center font-Bricolage"
+          className=" d-flex flex-column flex-md-row justify-content-center font-Bricolage"
           style={{
             color: "#655945",
             fontSize: "42px",
@@ -31,7 +31,7 @@ export default function BlogPosts() {
           </button>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center gap-2">
+      <div className="d-flex flex-column flex-lg-row mt-2 mt-lg-0 justify-content-between align-items-center gap-2">
         <div className="d-flex flex-column">
           <Image src={image1} alt="" width={350} height={270} />
           <div className="p-2">

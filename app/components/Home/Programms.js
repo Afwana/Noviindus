@@ -6,11 +6,11 @@ import grammer from "../../../public/images/grammer.png";
 
 export default function Programms() {
   return (
-    <div className="d-flex flex-column px-5">
-      <div className="d-flex justify-content-between align-items-center">
+    <div className="d-flex flex-column px-2 px-lg-5">
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div></div>
         <p
-          className=" d-flex justify-content-center font-Bricolage"
+          className=" d-flex flex-column flex-md-row justify-content-center font-Bricolage"
           style={{
             color: "#655945",
             fontSize: "42px",
@@ -53,15 +53,13 @@ export default function Programms() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className="d-flex justify-content-between align-items-center gap-3 mt-5">
+            <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-5 gap-lg-3 mt-5">
               <div className="position-relative">
                 <div
-                  className="p-4"
+                  className="p-4 program-item-box"
                   style={{
                     backgroundColor: "#FFF3E1",
                     borderRadius: "26px",
-                    width: "480px",
-                    height: "215px",
                   }}>
                   <p
                     className="font-sans icon-color"
@@ -69,8 +67,8 @@ export default function Programms() {
                     English Grammar
                   </p>
                   <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Master the building blocks of writing <br /> and
-                    communication.
+                    Master the building blocks of writing{" "}
+                    <br className="d-none d-md-block" /> and communication.
                   </p>
                   <div className="d-flex justify-content-start">
                     <button className="fancy-button font-sans">
@@ -84,7 +82,7 @@ export default function Programms() {
                   </div>
                 </div>
                 <div
-                  className="position-absolute"
+                  className="position-absolute d-none d-md-block"
                   style={{ top: "-30px", left: "60%" }}>
                   <Image
                     src={grammer}
@@ -97,12 +95,10 @@ export default function Programms() {
               </div>
               <div className="position-relative">
                 <div
-                  className="p-4"
+                  className="p-4 program-item-box"
                   style={{
                     backgroundColor: "#FFF3E1",
                     borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
                   }}>
                   <p
                     className="font-sans icon-color"
@@ -110,8 +106,9 @@ export default function Programms() {
                     Craft Classes
                   </p>
                   <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Unleash creativity with hands-on <br /> projects and
-                    artistic fun.
+                    Unleash creativity with hands-on{" "}
+                    <br className="d-none d-md-block" /> projects and artistic
+                    fun.
                   </p>
                   <div className="d-flex justify-content-start">
                     <button className="fancy-button font-sans">
@@ -125,7 +122,7 @@ export default function Programms() {
                   </div>
                 </div>
                 <div
-                  className="position-absolute"
+                  className="position-absolute d-none d-md-block"
                   style={{ top: "-30px", left: "55%", zIndex: 1 }}>
                   <Image
                     src={craft}
@@ -138,12 +135,10 @@ export default function Programms() {
               </div>
               <div className="position-relative">
                 <div
-                  className="p-4"
+                  className="p-4 program-item-box"
                   style={{
                     backgroundColor: "#FFF3E1",
                     borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
                   }}>
                   <p
                     className="font-sans icon-color"
@@ -151,8 +146,8 @@ export default function Programms() {
                     Art and Painting
                   </p>
                   <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Express yourself through colors, <br /> sketches, and
-                    designs
+                    Express yourself through colors,{" "}
+                    <br className="d-none d-md-block" /> sketches, and designs
                   </p>
                   <div className="d-flex justify-content-start">
                     <button className="fancy-button font-sans">
@@ -166,261 +161,7 @@ export default function Programms() {
                   </div>
                 </div>
                 <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "60%" }}>
-                  <Image
-                    src={art}
-                    alt="art"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="d-flex justify-content-between align-items-center gap-3 mt-5">
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "480px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    English Grammar
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Master the building blocks of writing <br /> and
-                    communication.
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "60%" }}>
-                  <Image
-                    src={grammer}
-                    alt="mission"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    Craft Classes
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Unleash creativity with hands-on <br /> projects and
-                    artistic fun.
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "55%", zIndex: 1 }}>
-                  <Image
-                    src={craft}
-                    alt="craft"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    Art and Painting
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Express yourself through colors, <br /> sketches, and
-                    designs
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "60%" }}>
-                  <Image
-                    src={art}
-                    alt="art"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="d-flex justify-content-between align-items-center gap-3 mt-5">
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "480px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    English Grammar
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Master the building blocks of writing <br /> and
-                    communication.
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "60%" }}>
-                  <Image
-                    src={grammer}
-                    alt="mission"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    Craft Classes
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Unleash creativity with hands-on <br /> projects and
-                    artistic fun.
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
-                  style={{ top: "-30px", left: "55%", zIndex: 1 }}>
-                  <Image
-                    src={craft}
-                    alt="craft"
-                    width={187}
-                    height={248}
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className="position-relative">
-                <div
-                  className="p-4"
-                  style={{
-                    backgroundColor: "#FFF3E1",
-                    borderRadius: "26px",
-                    width: "450px",
-                    height: "215px",
-                  }}>
-                  <p
-                    className="font-sans icon-color"
-                    style={{ fontSize: "24px", fontWeight: "bolder" }}>
-                    Art and Painting
-                  </p>
-                  <p className="icon-color" style={{ fontSize: "17px" }}>
-                    Express yourself through colors, <br /> sketches, and
-                    designs
-                  </p>
-                  <div className="d-flex justify-content-start">
-                    <button className="fancy-button font-sans">
-                      <span className="bg-layer"></span>
-                      <span
-                        className="button-content"
-                        style={{ fontSize: "14px" }}>
-                        Read More <BsArrowUpRight className="ms-1" size={16} />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="position-absolute"
+                  className="position-absolute d-none d-md-block"
                   style={{ top: "-30px", left: "60%" }}>
                   <Image
                     src={art}
